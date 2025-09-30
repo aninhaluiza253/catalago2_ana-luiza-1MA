@@ -1,66 +1,125 @@
-<head>
-
-</head>
-
-<body>
-    <header>ALURAFLIX</header>
-
-
-    <h1>by make</h1>
-    <p>#maquiagem</p>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</body>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Vídeos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Catálogo de Maquiagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2a2a2a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .produto {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .produto img {
+            width: 100%;
+            height: auto;
+        }
+        .produto-info {
+            padding: 15px;
+        }
+        .produto-info h3 {
+            margin: 0;
+            color: #333;
+        }
+        .produto-info p {
+            color: #666;
+        }
+        .produto-info .preco {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .btn-compra {
+            display: block;
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .btn-compra:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Catálogo de Vídeos</h1>
-        <p>Descubra vídeos incríveis e se divirta!</p>
+        <h1>Catálogo de Maquiagem</h1>
+        <p>Encontre os melhores produtos para realçar sua beleza</p>
     </header>
 
-    <div class="container">
-        <div class="video-card">
-            <img src="https://via.placeholder.com/300x180" alt="Vídeo 1" class="thumbnail">
-            <div class="info">
-                <h3>Vídeo 1 - Como aprender HTML</h3>
-                <p>Aprenda os conceitos básicos de HTML e comece a criar suas próprias páginas web.</p>
-                <a href="#" class="button">Assistir</a>
+    <div class="catalogo">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x200?text=Base" alt="Base">
+            <div class="produto-info">
+                <h3>Base Líquida</h3>
+                <p>Uma base líquida de cobertura média e acabamento natural.</p>
+                <p class="preco">R$ 89,90</p>
+                <a href="#" class="btn-compra">Comprar</a>
             </div>
         </div>
 
-        <div class="video-card">
-            <img src="https://via.placeholder.com/300x180" alt="Vídeo 2" class="thumbnail">
-            <div class="info">
-                <h3>Vídeo 2 - Introdução ao CSS</h3>
-                <p>Entenda o básico do CSS e como ele é usado para estilizar páginas web.</p>
-                <a href="#" class="button">Assistir</a>
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x200?text=Batons" alt="Batom">
+            <div class="produto-info">
+                <h3>Batom Matte</h3>
+                <p>Batom matte de longa duração e acabamento impecável.</p>
+                <p class="preco">R$ 45,00</p>
+                <a href="#" class="btn-compra">Comprar</a>
             </div>
         </div>
 
-        <div class="video-card">
-            <img src="https://via.placeholder.com/300x180" alt="Vídeo 3" class="thumbnail">
-            <div class="info">
-                <h3>Vídeo 3 - JavaScript para iniciantes</h3>
-                <p>Comece a programar com JavaScript e dê vida à sua página web com interatividade.</p>
-                <a href="#" class="button">Assistir</a>
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x200?text=Sombra" alt="Sombra">
+            <div class="produto-info">
+                <h3>Sombra Compacta</h3>
+                <p>Sombra compacta com excelente pigmentação e durabilidade.</p>
+                <p class="preco">R$ 59,90</p>
+                <a href="#" class="btn-compra">Comprar</a>
             </div>
         </div>
 
-        <!-- Adicione mais cards conforme necessário -->
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x200?text=Máscara+de+cílios" alt="Máscara de Cílios">
+            <div class="produto-info">
+                <h3>Máscara de Cílios</h3>
+                <p>Máscara de cílios para volume e alongamento extra.</p>
+                <p class="preco">R$ 49,90</p>
+                <a href="#" class="btn-compra">Comprar</a>
+            </div>
+        </div>
     </div>
 
 </body>
 </html>
-
